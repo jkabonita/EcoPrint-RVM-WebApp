@@ -1,0 +1,114 @@
+# ============================================
+# EcoPrint Project - Git Ignore Configuration
+# ============================================
+
+# ====================
+# Python / RVM Component
+# ====================
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Machine learning models (large binary files)
+*.pt
+*.pth
+*.onnx
+*.h5
+*.pkl
+*.joblib
+
+# Keep model configuration
+!best_models/classes.txt
+
+# Python IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# ====================
+# PHP / WebApp Component
+# ====================
+# CodeIgniter 4
+/EcoPrint-WebApp/vendor/
+/EcoPrint-WebApp/writable/logs/
+/EcoPrint-WebApp/writable/cache/
+/EcoPrint-WebApp/writable/session/
+/EcoPrint-WebApp/writable/uploads/
+/EcoPrint-WebApp/writable/debugbar/
+/EcoPrint-WebApp/writable/tmp/
+
+# Environment configuration (contains secrets)
+.env
+.env.*
+!env
+
+# Uploads folder
+/EcoPrint-WebApp/uploads/
+
+# Error logs
+error_log
+
+# Google OAuth JSON (contains client secrets)
+google_client_json.json
+
+# Composer
+composer.phar
+/EcoPrint-WebApp/composer.lock
+
+# Node / Frontend
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Build artifacts
+/EcoPrint-WebApp/builds
+/EcoPrint-WebApp/public/build
+
+# ====================
+# Documentation
+# ====================
+# PDF files (documentation and manuscripts)
+*.pdf
+
+# ZIP archives
+*.zip
+
+# ====================
+# IDE and Editor
+# ====================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ====================
+# Database
+# ====================
+# Include SQL schema
+!*.sql
+
+# ====================
+# Nested Git Repositories
+# ====================
+# Ignore embedded git repos
+EcoPrint-WebApp/web/ecoprint-cspc.me/public_html/

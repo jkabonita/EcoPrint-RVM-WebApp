@@ -1,0 +1,4 @@
+AddType text/javascript .mjs
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options nosniff
+</IfModule>
